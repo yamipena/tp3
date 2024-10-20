@@ -136,41 +136,10 @@
     font-weight: 500;
 }
 
-.contenedor-programa {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 30px 0px;
-    font-family: "Space Grotesk";
-    color: #323232;
-    font-size: 1.2em;
-    font-weight: 500;
-    gap: 20px;
-
-}
-
 .titulo_seccion {
     width: 220px;
     height: 50px;
     background-color: #B2B1D9;
-    border-style: solid;
-    border-radius: 50px;
-    border-color: #323232;
-    font-family: "Space Grotesk";
-    font-size: 1em;
-    color: #323232;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.titulo_seccion_clarito {
-    width: 220px;
-    height: 50px;
-    background-color: #D9D9D9;
     border-style: solid;
     border-radius: 50px;
     border-color: #323232;
@@ -235,6 +204,60 @@ h3:hover {
 .imagen_proyectos:hover {
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    background-color: #D9D9D9;
+    width: 550px;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+input, textarea {
+    background-color: #D9D9D9;
+    border: #323232;
+    border-style: solid;
+    border-radius: 25px;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.primera_linea {
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    font-family: "Space Grotesk";
+    display: block;
+    padding-bottom: 5px;
+}
+
+.textos_contacto {
+    color: #323232;
+    display: flex;
+    width: 400px;
+    height: 294px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textos_contacto h2 {
+    font-family: "space grotesk";
+    font-size: 2.5em;
+}
+
+.textos_contacto p {
+    font-family: "noto sans";
+    font-size: 1.2em;
 }
 
 footer {

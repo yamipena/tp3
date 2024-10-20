@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Yamila Pena</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iconos\destellos.svg" type="image/x-icon" alt="Ícono de estrellas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex-container">
+    <header>
+        <nav id="botonera">
+            <div class="home">
+                <h1><a href="#">Yami</a></h1>
+            </div>
+            <div class="botones">
+                <a href="#sobre_mi" class="boton">Sobre mí</a>
+                <a href="#proyectos" class="boton">Proyectos</a>
+                <a href="mailto:yamilapena8@gmail.com" class="boton_contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secciones-lila">
+                <div class="textos_contacto">
+                    <h2>¿Te gustaría que tu proyecto aparezca en esta página?</h2>
+                    <p>Contame tu propuesta y charlemos</p>
+                </div>
+                <div>
+                    <form method="post" action="mailto:yamilap.pena@gmail.com?subject=Mail enviado desde el formulario" target="_blank" enctype="text/plain">
+                        <div class="primera_linea">
+                            <div>
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" name="Nombre" id="Nombre" placeholder="Juan" required>
+                            </div>
+                            <div>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" name="Apellido" id="Apellido" placeholder="Perez" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Correo electrónico">Correo electrónico</label>
+                            <input type="email" name="Correo electrónico" id="Correo electrónico" placeholder="Juanperez@gmail.com" required>
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea name="Mensaje" id="Mensaje" required></textarea>
+                        </div>
+                        <input class="boton_contacto" type="submit">
+                    </form>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-centro">
+            <div class="contenedor-elementos">
+                <div>
+                    <a href="mailto:yamilapena8@gmail.com"><img src="iconos\sobre-abierto.svg" width="25px" height="25px" alt="Ícono de casilla de mail"></a>
+                    <a href="https://www.behance.net/yamilapena" target="_blank"><img src="iconos\behance.svg" width="25px" height="25px" alt="Logotipo de Behance"></a>
+                </div>
+                <p>Mi primera página web. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
