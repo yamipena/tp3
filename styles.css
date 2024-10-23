@@ -3,10 +3,13 @@
 *{
     margin: 0;
     padding:0;
-    text-decoration: none;
-    color: inherit;
-    scroll-padding-top: 155px;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 #botonera {
     width: 100%;
@@ -17,7 +20,6 @@
     font-family: "Space Grotesk";
     padding: 0 5%;
     box-sizing: border-box;
-    position: fixed;
 }
 
 .botones {
@@ -103,19 +105,22 @@
     background-color: #D9D9D9;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .secciones-lila {
     width: 100%;
-    height: 550px;
+    height: 700px;
     background-color: #B2B1D9;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+    box-sizing: border-box;
 }
 
 .contenedor-centro {
     width: 70%;
-    margin-left: 15%;
 }
 
 .contenedor-elementos {
@@ -206,6 +211,8 @@ h3:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* contacto */
+
 form {
     background-color: #D9D9D9;
     width: 550px;
@@ -213,12 +220,13 @@ form {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
-    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-input, textarea {
+input {
     background-color: #D9D9D9;
     border: #323232;
     border-style: solid;
@@ -228,6 +236,36 @@ input, textarea {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.etiqueta-ancha {
+    background-color: #D9D9D9;
+    border: #323232;
+    border-style: solid;
+    border-radius: 25px;
+    width: 490px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.etiqueta-mensaje {
+    background-color: #D9D9D9;
+    border: #323232;
+    border-style: solid;
+    border-radius: 25px;
+    width: 490px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .primera_linea {
@@ -239,26 +277,30 @@ label {
     font-family: "Space Grotesk";
     display: block;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .textos_contacto {
     color: #323232;
     display: flex;
-    width: 400px;
-    height: 294px;
+    width: 450px;
+    height: 310px;
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
 }
 
 .textos_contacto h2 {
     font-family: "space grotesk";
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 .textos_contacto p {
     font-family: "noto sans";
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
+
+/* fin contacto */
 
 footer {
     width: 100%;

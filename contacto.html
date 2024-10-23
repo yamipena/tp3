@@ -17,12 +17,11 @@
     <header>
         <nav id="botonera">
             <div class="home">
-                <h1><a href="#">Yami</a></h1>
+                <h1><a href="index.html">Yami</a></h1>
             </div>
             <div class="botones">
-                <a href="#sobre_mi" class="boton">Sobre mí</a>
-                <a href="#proyectos" class="boton">Proyectos</a>
-                <a href="mailto:yamilapena8@gmail.com" class="boton_contacto">Contacto</a>
+                <a href="proyectos" class="boton">Proyectos</a>
+                <a href="contacto.html" class="boton_contacto">Contacto</a>
             </div>
         </nav>
     </header>
@@ -33,7 +32,7 @@
                     <h2>¿Te gustaría que tu proyecto aparezca en esta página?</h2>
                     <p>Contame tu propuesta y charlemos</p>
                 </div>
-                <div>
+                <div class="contenedor-formulario">
                     <form method="post" action="mailto:yamilap.pena@gmail.com?subject=Mail enviado desde el formulario" target="_blank" enctype="text/plain">
                         <div class="primera_linea">
                             <div>
@@ -47,9 +46,9 @@
                         </div>
                         <div>
                             <label for="Correo electrónico">Correo electrónico</label>
-                            <input type="email" name="Correo electrónico" id="Correo electrónico" placeholder="Juanperez@gmail.com" required>
+                            <input class="etiqueta-ancha" type="email" name="Correo electrónico" id="Correo electrónico" placeholder="Juanperez@gmail.com" required>
                             <label for="Mensaje">Mensaje</label>
-                            <textarea name="Mensaje" id="Mensaje" required></textarea>
+                            <textarea class="etiqueta-mensaje" name="Mensaje" id="Mensaje" required></textarea>
                         </div>
                         <input class="boton_contacto" type="submit">
                     </form>
