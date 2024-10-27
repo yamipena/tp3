@@ -3,13 +3,18 @@
 *{
     margin: 0;
     padding:0;
+    list-style: none;
+}
+
+body {
+    cursor: url(iconos/cursor-flecha.svg), auto;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    cursor: url(iconos/cursor.svg), auto;
 }
-
 
 #botonera {
     width: 100%;
@@ -266,6 +271,7 @@ input {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    padding-top: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -305,14 +311,19 @@ label {
 /* fin contacto */
 
 footer {
-    width: 100%;
-    height: 120px;
-    background-color: #323232;
-    font-family: "Noto Sans";
-    font-size: 0.7em;
-    color:#D9D9D9;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    background-color: #323232;
+    color: #D9D9D9;
+    font-family: "noto sans";
+    font-size: 0.8em;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 12px;
 }
 
 /* proyectos */
@@ -417,9 +428,10 @@ padding-top: 30px;
 
 .slider h3 {
     background-color: #B2B1D9;
+    color: inherit;
     border-color: #B2B1D9;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
     border-style: solid;
     border-radius: 20px;
     width: 215px;
