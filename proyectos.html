@@ -11,6 +11,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
+    <script>
+        function cambiarDisplay(visibilidadNueva){
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria(){
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria(){
+            cambiarDisplay('none')
+        }
+	</script>
+    
 </head>
 
 <body class="flex-container">
@@ -31,37 +43,84 @@
             <div class="contenedor-slider-proyectos">
                 <h3>Catálogo Aqualaf 2023</h3>
                 <div class="ventana-proyectos">
-                    <img src="img\img-proyectos\catalogo-aqua-1.jpg" width="750px" height="450px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos">
+                    <a href="#foto-1"><img src="img\img-proyectos\galeria-oculta\catalogo-aqua-grande-1.jpg" width="750px" height="450px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     <div class="contenedor-vertical-proyectos">
-                        <img src="img\img-proyectos\catalogo-aqua-2.jpg" width="300px" height="200px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos">
-                        <img src="img\img-proyectos\catalogo-aqua-3.jpg" width="300px" height="220px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos">
+                        <a href="#foto-2"><img src="img\img-proyectos\galeria-oculta\catalogo-aqua-grande-2.jpg" width="300px" height="200px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
+                        <a href="#foto-3"><img src="img\img-proyectos\galeria-oculta\catalogo-aqua-grande-3.jpg" width="300px" height="220px" alt="Catálogo de productos 2023 de Aqualaf Griferia" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     </div>
                 </div>
             </div>
-
             <div class="contenedor-slider-proyectos">
                 <h3>Recetario Vegetariano</h3>
                 <div class="ventana-proyectos">
-                    <img src="img\img-proyectos\recetario-1.jpg" width="750px" height="450px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos">
+                    <a href="#foto-4"><img src="img\img-proyectos\recetario-1.jpg" width="750px" height="450px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     <div class="contenedor-vertical-proyectos">
-                        <img src="img\img-proyectos\recetario-2.jpg" width="300px" height="200px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos">
-                        <img src="img\img-proyectos\recetario-3.jpg" width="300px" height="220px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos">
+                        <a href="#foto-5"><img src="img\img-proyectos\recetario-2.jpg" width="300px" height="200px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
+                        <a href="#foto-6"><img src="img\img-proyectos\recetario-3.jpg" width="300px" height="220px" alt="Recetario Vegetariano" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     </div>
                 </div>
             </div>
-
             <div class="contenedor-slider-proyectos">
                 <h3>Fotografias de producto</h3>
                 <div class="ventana-proyectos">
-                    <img src="img\img-proyectos\fotoproducto-1.jpg" width="750px" height="450px" alt="Fotografía de grifería" class="imagen-ventana-proyectos">
+                    <a href="#foto-7"><img src="img\img-proyectos\fotoproducto-1.jpg" width="750px" height="450px" alt="Fotografía de grifería" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     <div class="contenedor-vertical-proyectos">
-                        <img src="img\img-proyectos\fotoproducto-2.jpg" width="300px" height="200px" alt="Fotografía de grifería" class="imagen-ventana-proyectos">
-                        <img src="img\img-proyectos\fotoproducto-3.jpg" width="300px" height="220px" alt="Fotografía de grifería" class="imagen-ventana-proyectos">
+                        <a href="#foto-8"><img src="img\img-proyectos\fotoproducto-2.jpg" width="300px" height="200px" alt="Fotografía de grifería" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
+                        <a href="#foto-9"><img src="img\img-proyectos\fotoproducto-3.jpg" width="300px" height="220px" alt="Fotografía de grifería" class="imagen-ventana-proyectos" onClick="mostrarGaleria()"></a>
                     </div>
                 </div>
             </div>
-            
         </section>
+
+        <section id="galeria">
+            <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1">
+                            <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                            <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#foto-2"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-2">
+                            <a href="#foto-1"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                            <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#foto-3"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-3">
+                            <a href="#foto-2"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                            <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-4">
+                        <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                        <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                        <a href="#foto-5"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-5">
+                        <a href="#foto-4"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                        <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                        <a href="#foto-6"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-6">
+                        <a href="#foto-5"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                        <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+                </li>
+                <li class="fraccion-galeria" id="foto-7">
+                    <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                    <a href="#foto-8"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+            </li>
+            <li class="fraccion-galeria" id="foto-8">
+                    <a href="#foto-7"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                    <a href="#foto-9"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+            </li>
+            <li class="fraccion-galeria" id="foto-9">
+                    <a href="#foto-8"><img src="iconos\flecha-izquierda.svg" width="50px" height="50px" alt="Anterior"></a>
+                    <img class="close" src="iconos\cruz.svg" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                    <a href="#" class="primer-ultima-flecha"><img src="iconos\flecha-derecha.svg" width="50px" height="50px" alt="Siguiente"></a>
+            </li>
+            </ul>
+    </section>
         
         <section class="flechas-slider-proyectos">
             <div>
