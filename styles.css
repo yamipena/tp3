@@ -527,7 +527,7 @@ textarea {
 
     .secciones-lila {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         padding: 0px 15px;
     }
 
