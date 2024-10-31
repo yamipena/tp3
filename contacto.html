@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <header>
         <nav id="botonera">
             <div class="home">
@@ -27,33 +28,31 @@
         </nav>
     </header>
 
+
+
     <main>
         <section class="secciones-lila">
                 <div class="textos_contacto">
                     <h2>¿Te gustaría que tu proyecto aparezca en esta página?</h2>
                     <p>Contame tu propuesta y charlemos</p>
                 </div>
-                <div class="contenedor-formulario">
                     <form method="post" action="mailto:yamilap.pena@gmail.com?subject=Mail enviado desde el formulario" target="_blank" enctype="text/plain">
                         <div class="primera_linea">
-                            <div>
+                            <div class="etiqueta-mitad">
                                 <label for="Nombre">Nombre</label>
                                 <input type="text" name="Nombre" id="Nombre" placeholder="Juan" required>
                             </div>
-                            <div>
+                            <div class="etiqueta-mitad">
                                 <label for="Apellido">Apellido</label>
                                 <input type="text" name="Apellido" id="Apellido" placeholder="Perez" required>
                             </div>
                         </div>
-                        <div>
                             <label for="Correo electrónico">Correo electrónico</label>
                             <input class="etiqueta-ancha" type="email" name="Correo electrónico" id="Correo electrónico" placeholder="Juanperez@gmail.com" required>
                             <label for="Mensaje">Mensaje</label>
                             <textarea class="etiqueta-mensaje" name="Mensaje" id="Mensaje" required></textarea>
-                        </div>
                         <input class="boton_contacto" value="Enviar" type="submit">
                     </form>
-                </div>
         </section>
     </main>
 
@@ -71,5 +70,6 @@
         </div>
     </footer>
 </body>
+
 
 </html>
