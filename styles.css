@@ -2,11 +2,12 @@
 
 *{
     margin: 0;
-    padding:0;
 }
 
 body {
     cursor: url(iconos/cursor-flecha.svg), auto;
+    background-color: #D9D9D9;
+    
 }
 
 a {
@@ -34,6 +35,26 @@ a {
     align-items: center;
     gap: 30px;
     color: #323232;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    background-color: #323232;
+    color: #D9D9D9;
+    font-family: "noto sans";
+    font-size: 0.8em;
+}
+
+footer li {
+    list-style: none;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 12px;
 }
 
 .home {
@@ -68,10 +89,10 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0px;
+    cursor: url(iconos/cursor.svg), auto;
 }
 
 .portada {
-    width: 100%;
     height: 750px;
     background-color: #B2B1D9;
     display: flex;
@@ -84,7 +105,6 @@ a {
 }
 
 .hola {
-    font-family: "Space Grotesk";
     font-size: 2.5em;
     font-weight: 700;
 }
@@ -97,15 +117,12 @@ a {
 }
 
 .foto_mia {
-    height: 371px;
-    width: 430px;
     border-style: solid;
     border-color: #B2B1D9;
     border-radius: 50px;
 }
 
 .secciones {
-    width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -128,8 +145,6 @@ a {
 }
 
 .contenedor-elementos {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -153,18 +168,15 @@ a {
     border-radius: 50px;
     border-color: #323232;
     font-family: "Space Grotesk";
-    font-size: 1em;
     color: #323232;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     margin-bottom: 20px;
 }
 
 h3 {
     font-family: "Space Grotesk";
-    font-style: bold;
     font-size: 1.5em;
     color: #323232;
 }
@@ -190,12 +202,9 @@ h3:hover {
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
-    justify-content: left;
     gap: 10px;
     padding: 40px;
     box-sizing: border-box;
-    list-style-type: disc;
-    list-style-position: inside;
 }
 
 .noto-italic {
@@ -306,33 +315,11 @@ label {
     font-size: 1.5em;
 }
 
-/* fin contacto */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3% 5%;
-    background-color: #323232;
-    color: #D9D9D9;
+textarea {
     font-family: "noto sans";
-    font-size: 0.8em;
-}
-
-footer li {
-    list-style: none;
-}
-
-.redes-footer {
-    display: flex;
-    gap: 12px;
 }
 
 /* proyectos */
-
-body {
-    background-color: #D9D9D9;
-}
 
 .contenedor-slider-proyectos {
     padding: 0px 180px;
@@ -407,7 +394,7 @@ padding-top: 30px;
 .slider .slide-track{
     display: flex;
     animation: scroll 10s linear infinite;
-    width: calc(90px * 28);
+    width: calc(90px * 32);
     -webkit-animation: scroll 10s linear infinite;
 }
 .slider .slide{
@@ -423,8 +410,8 @@ padding-top: 30px;
         -webkit-transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-90px * 7));
-        -webkit-transform: translateX(calc(-90px * 7));
+        transform: translateX(calc(-90px * 8));
+        -webkit-transform: translateX(calc(-90px * 8));
     }
 }
 
@@ -522,4 +509,49 @@ padding-top: 30px;
 
 #foto-9 {
 	background-image: url("img/img-proyectos/galeria-oculta/fotoproducto-grande-3.jpg");
+}
+
+/* proyectos adaptacion mobile*/
+
+@media screen and (max-width: 600px) {
+    #botonera {
+        width: 600px;
+    }
+
+    .secciones-lila {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: auto;
+        align-items: center;
+    }
+
+    .textos_contacto {
+        width: 70%;
+        padding: 60px 0px;
+    }
+
+    footer {
+        width: 600px;
+        box-sizing: border-box;
+    }
+
+    .contenedor-formulario {
+        width: 550px;
+
+    }
+
+    form {
+        width: 90%;
+        height: auto;
+    }
+
+    .primera_linea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input , .etiqueta-ancha , .etiqueta-mensaje {
+        width: 400px;
+    }
 }
