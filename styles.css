@@ -47,12 +47,12 @@ footer {
     color: #D9D9D9;
     font-family: "noto sans";
     font-size: 0.8em;
-    padding-inline-start: 0;
 }
 
 footer li {
     list-style: none;
 }
+
 
 .redes-footer {
     display: flex;
@@ -546,6 +546,7 @@ textarea {
 
     form {
         width: 98%;
+        padding: 15px;
         margin-bottom: 10%;
     }
 
