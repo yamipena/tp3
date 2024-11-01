@@ -564,7 +564,29 @@ textarea {
     footer li {
         font-size: 0.8em;
     }
+
+    .redes-footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #botonera h1{
+        font-size: 1.2em;
+    }
     
+    #botonera {
+        font-size: 0.8em;
+    }
+
+    .botones {
+        gap: 15px;
+    }
+
+    .boton , .boton_contacto {
+        width: 100px;
+        height: 20px;
+    }
+
     }
 
 
