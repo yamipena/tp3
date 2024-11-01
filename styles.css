@@ -6,14 +6,14 @@
 }
 
 body {
-    cursor: url(iconos/cursor-flecha.svg), auto;
+    cursor: url(img/iconos/cursor-flecha.svg), auto;
     background-color: #D9D9D9;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-    cursor: url(iconos/cursor.svg), auto;
+    cursor: url(img/iconos/cursor.svg), auto;
 }
 
 #botonera {
@@ -63,7 +63,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    cursor: url(iconos/cursor.svg), auto;
+    cursor: url(img/iconos/cursor.svg), auto;
 }
 
 footer {
